@@ -5,10 +5,7 @@ import About from './Section/About'
 import Contact from './Section/Contact'
 import Login from './Section/Login'
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
+    Route
   } from "react-router-dom";
   
 
