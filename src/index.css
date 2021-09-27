@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+header {
+  min-height: 70px;
+  background-color: #555;
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+header .logo {
+  margin-left: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+header ul {
+  display: flex;
+  margin-right: 50px;
+  display: inline-block;
+}
+header ul li {
+  display: inline-block;
+}
+
+header ul li a {
+  display: inline-block;
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+  line-height: 70px;
+  padding: 0 15px;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+ul li a:hover {
+  opacity: 1;
+}
+header .close,
+header .menu {
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 1px solid white;
+  padding: 10px 20px;
+  margin-right: 20px;
+  display: none;
+}
+header .close {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  border-radius: 5px;
+}
+section {
+  min-height: 100vh;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #444;
+  font-size: 2.5rem;
+}
+section p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 750px) {
+  header .logo,
+  header ul {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    line-height: 50px;
+  }
+  header .logo {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 500px) {
+  header ul {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: #555;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    transition: 0.5s linear;
+  }
+  header ul.toggle {
+    left: 0;
+  }
+  header ul li {
+    padding: 20px 0;
+    line-height: normal;
+  }
+  header .menu,
+  header .close {
+    display: block;
+  }
+  header .logo {
+    width: inherit;
+    margin-left: 20px;
+    line-height: 70px;
+  }
+  section h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
