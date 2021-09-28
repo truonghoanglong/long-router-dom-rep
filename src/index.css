@@ -18,7 +18,7 @@ code {
 }
 header {
   min-height: 70px;
-  background-color: #555;
+  background-color: #333;
   color: #fff;
   overflow: hidden;
   display: flex;
@@ -53,6 +53,7 @@ header ul li a {
 ul li a:hover {
   opacity: 1;
 }
+
 header .close,
 header .menu {
   cursor: pointer;
