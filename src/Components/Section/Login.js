@@ -4,7 +4,7 @@ export class Login extends Component {
     render() {
         return (
             <div>
-                <h2>Contact Component</h2>
+                <h2>Login/Register Component</h2>
             </div>
         )
     }
